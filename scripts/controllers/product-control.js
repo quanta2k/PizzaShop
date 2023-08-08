@@ -93,7 +93,7 @@ function preparePizzaCard(pizza){
   const button= document.createElement('button')
   button.setAttribute('product-id',pizza.id);
   button.addEventListener('click',addToCart)
-  button.innerText='Add to Card';
+  button.innerText='Add to Cart';
   button.className='btn btn-primary'
   cardBody.appendChild(h5);
   cardBody.appendChild(pTag)
