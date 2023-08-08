@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Pizzeria</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="stylesheet/main.css">
+  <script src="./scripts/controllers/product-control.js" type ="module"></script>
+  </head>
+</head>
+<body>
+  <header class="m-3">
+    <div class="logo">
+      <img src="https://www.pizzahut.co.in/order/images/logos/logo_wide@x2.38f9109e24d22d58d048837b27f54390.png" alt="">
+    </div>
+  </header>
+  <div class="container">
+  <h1 class="alert alert-danger text-center">Pizza Shop</h1>
+    <div class="row">
+      <div class="col-8">
+        <div class="row" id="output">
+        
+          <!-- Here dynamic columns --(card) are created -->
+        </div>
+      </div>
+      <div class="col-4 border border-1 text-center fs-4"><span class="text-decoration-underline fs-3 fw-bold">TOTAL BILL</span>
+        <ul id='basket'>
+        
+        </ul><br><br><br>
+        <div><h4 class="fw-bold">total bill(excluding gst) : <span id="sum"></span> </h4>
+        <h4 class="fw-bold">GST :<span id="gst"></span></h4></div>
+        <h4 class="fw-bold">Final Bill :YOUR WISH<span id="final"></span></h4>
+        <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_MLsiXKZTmIxq5c" async></script> </form>
+      </div>  
+     </div>   
+  </div> 
+</body>
+</html>
